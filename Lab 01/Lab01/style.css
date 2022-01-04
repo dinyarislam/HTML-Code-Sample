@@ -1,0 +1,76 @@
+body {
+  background-color: #f5f5dc;
+  font-family: Helvetica;
+}
+
+.navigationbar {
+  overflow: hidden;
+  background-color: #9E3E12;
+}
+
+.navigationbar a {
+  float: left;
+  color: white;
+  font-size: 16px;
+  padding: 12px 15px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navigationbar a:visited {
+  color: white;
+}
+.navigationbar a:hover {
+  background-color: black;
+}
+
+
+a:link {
+  color: blue;
+}
+a:visited {
+  color: purple;
+}
+a:hover {
+  color: green;
+}
+a:active {
+  color: red;
+}
+
+
+h1 {
+  color: brown;
+}
+h2 {
+  color: brown;
+}
+h3 {
+  color: brown;
+}
+
+
+p {
+  color: #6F7874;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+.author {
+  font-style: italic;
+  font-size: 13px;
+  color: black;
+}
+.newline {
+  color: #1D1B19;
+}
+.coins {
+  width: 450px;
+}
+
+#caption {
+  color: #15A273;
+  font-style: italic;
+}

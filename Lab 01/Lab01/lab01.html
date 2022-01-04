@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Coin Collection</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+  table, th, td {
+   border: 2px solid black;
+  }
+  </style>
+
+  <body>
+    <div class="navigationbar">
+      <a href="lab01.html">Home</a>
+      <a href="other.html">American Coins</a>
+    </div>
+
+    <h1>Coin Collection</h1>
+    <p class="author">Website made by Dinyar Islam</p>
+    <h2>Home</h2>
+    <a href="https://www.pickpik.com/coins-pennies-money-currency-cash-finance-44358"><img src="images/img2.jpg" alt="coin collection" class="coin collection" style="width:1250px;height:350px;"/>
+      </a>
+    <p>Collecting coins is one of my favorite ways to spend my past time and I've been
+      engaged with this hobby ever since I was a 10 year-old kid. I have several hundred
+      different coins in my collection and this webiste gives a brief overview of some
+      of the many different types of coins I have collected over the years. Most of
+      the coins have been collected personally by me when I've travelled abroad to those
+      countries, but there are some that I've recieved as gifts.
+    </p>
+    <p class="newline">Based on their geographic origins, most of my coins can categorized into the following types:</p>
+    <ul>
+      <a href="https://www.usmint.gov/learn/coin-and-medal-programs/circulating-coins">
+      <li>American Coins</li></a>
+      <li>European Coins</li>
+      <li>Asian Coins</li>
+    </ul>
+    <a href="other.html">Click the this text to check out my page on the American coins in my collection
+      </a>
+    <h3>Current Collection</h3>
+    <button onclick="searchFunc()">Search Collection</button>
+
+    <p id="demo"></p>
+
+    <script>
+    function searchFunc() {
+      var outputmessage;
+      var searchcoin = prompt("What type of coin are you looking for?");
+      if (searchcoin == null || searchcoin == "") {
+        outputmessage = "Search Terminated";
+      } else if (searchcoin == "Dime" || searchcoin == "Penny" || searchcoin ==     "Yen" || searchcoin == "Dirham" || searchcoin == "Pound" || searchcoin       == "Rupee" || searchcoin == "Ringgit" || searchcoin == "Taka" ||             searchcoin == "Swiss Franc" ){
+        outputmessage = "Coin exists in collection. Refer to table below for         more information on " + searchcoin + ".";
+      } else {
+        outputmessage = "Sorry, coin does not exist in collection."
+      }
+      document.getElementById("demo").innerHTML = outputmessage;
+    }
+    </script>
+
+    <p class="newline">The following table shows the different types of coins in my current collection</p>
+
+    <table style="width:90%">
+      <tr>
+        <th>Type of Coin</th>
+        <th>Country of Origin</th>
+        <th>Year Added To Collection</th>
+        <th>Number of Samples</th>
+      </tr>
+      <tr>
+        <td>Dime</td>
+        <td>USA</td>
+        <td>2010</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>Penny</td>
+        <td>USA</td>
+        <td>2010</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>1 Yen</td>
+        <td>Japan</td>
+        <td>2012</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>1 Dirham</td>
+        <td>UAE</td>
+        <td>2007</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>1 Pound</td>
+        <td>UK</td>
+        <td>2009</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>2 Rupee</td>
+        <td>India</td>
+        <td>2008</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>1 Ringgit</td>
+        <td>Malaysia</td>
+        <td>2007</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>5 Taka</td>
+        <td>Bangladesh</td>
+        <td>2006</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>1 Swiss Franc</td>
+        <td>Switzerland</td>
+        <td>2014</td>
+        <td>1</td>
+      </tr>
+    </table>
+
+    <p><img src="images/img1.jpg" alt="coins" class="coins" />
+      <img src="images/img3.jpg" alt="coins" class="coins" />
+    </p>
+    <p id="caption">
+      Fig: Two images of my coin collection
+    </p>
+
+  </body>
+</html>
